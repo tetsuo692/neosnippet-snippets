@@ -155,6 +155,12 @@ options word
     ${2}
   end
 
+snippet find_all
+abbr find_all { |obj| block } → array
+alias select
+options word
+  find_all { |${1:#:variable}| ${2} }
+
 snippet map
 alias collect
 options word
