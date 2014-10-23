@@ -108,6 +108,11 @@ options word
     ${3}
   end
 
+snippet each_slice
+abbr each_slice(n) { ... } → nil
+options word
+  each_slice(${1:#:value}) { |${2:#:variable}| ${0} }
+
 snippet all
 options word
   all? { |${1:#:variable}| ${2} }
