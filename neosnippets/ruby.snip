@@ -108,6 +108,16 @@ options word
     ${3}
   end
 
+snippet any
+options word
+  any? { |${1:#variable}| ${2} }
+
+snippet any_do
+options word
+  any? |${1:#variable}| do
+    ${2}
+  end
+
 snippet map
 options word
   map { |${1:#:variable}| ${2} }
