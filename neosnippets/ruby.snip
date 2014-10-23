@@ -172,6 +172,11 @@ options word
     ${2}
   end
 
+snippet inject
+abbr inject(initial) { |memo, obj| block } → obj
+alias reduce
+options word
+  inject(${1:#:initial}) { |${2:#:memo},${3:#:obj}| ${0} }
 snippet map
 alias collect
 options word
