@@ -129,8 +129,16 @@ options word
   end
 
 snippet map
+alias collect
 options word
   map { |${1:#:variable}| ${2} }
+
+snippet map_do
+alias collect_do
+options word
+  map |${1:#:variable}| do
+    ${2}
+  end
 
 snippet sort
 options word
