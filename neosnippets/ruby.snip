@@ -136,7 +136,19 @@ options word
 snippet count_block
 abbr count { |obj| block } → int
 options word
-  count { |${1:1:variable}| ${2} }
+  count { |${1:#:variable}| ${2} }
+
+snippet find
+alias detect
+options word
+  find { |${1:#:variable}| ${2} }
+
+snippet find_do
+alias detect_do
+options word
+  find |${1:#:variable}| do
+    ${2}
+  end
 
 snippet map
 alias collect
