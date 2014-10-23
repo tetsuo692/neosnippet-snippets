@@ -161,6 +161,17 @@ alias select
 options word
   find_all { |${1:#:variable}| ${2} }
 
+snippet group_by
+abbr group_by { |obj| block } → a_hash
+options word
+  group_by { |${1:1:variable}| ${2} }
+
+snippet group_by_do
+options word
+  group_by |${1:#variable}| do
+    ${2}
+  end
+
 snippet map
 alias collect
 options word
