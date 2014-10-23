@@ -114,8 +114,8 @@ options word
 
 snippet all_do
 options word
-  all? do |${1:#variable| ${2} }
-    ${3}
+  all? |${1:#variable}| do
+    ${2}
   end
 
 snippet any
