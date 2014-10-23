@@ -177,6 +177,12 @@ abbr inject(initial) { |memo, obj| block } → obj
 alias reduce
 options word
   inject(${1:#:initial}) { |${2:#:memo},${3:#:obj}| ${0} }
+
+snippet max
+abbr max { |a, b| block } → obj
+options word
+  max { |${1:a},${2:b}| ${0} }
+
 snippet map
 alias collect
 options word
